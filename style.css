@@ -16,6 +16,10 @@ header{
 
 }
 
+header>nav{
+    margin: auto;
+}
+
 .logo{
     width: 100px;
 }
@@ -25,9 +29,12 @@ header{
  padding: 5px;
  border-radius: 5px;
  text-align: center;
+ position: fixed;
+ right:0;
+ top:120px
 }
 
-/*hero section*/
+/*HERO SECTION*/
 
 .sectionHero{
     height: 100vh;
@@ -48,6 +55,8 @@ header{
     text-align: center;
 
 }
+
+
 
 .divHero>p{
     font-size: 25px;
@@ -71,18 +80,33 @@ header{
     margin-left: 90%;
 }
 
+.container{
+    margin: 50px;
+}
+
+.g30{
+    gap: 30px;
+}
+
+.g50{
+    gap: 50px;
+}
+
+/*MARGE*/
+
 .top20{
-    margin-top: 20%;
+    margin-top: 20px;
 }
 
 .top30{
-    margin-top: 30%;
+    margin-top: 30px;
 }
 
 .top50{
-    margin-top: 50%;
+    margin-top: 50px;
 }
 
+/*FLEX*/
 .flex{
     display: flex;
     flex-wrap: wrap;
@@ -104,18 +128,8 @@ header{
     justify-content: center;
 }
 
-.container{
-    margin: 50px;
-}
 
-.g30{
-    gap: 30px;
-}
-
-.g50{
-    gap: 50px;
-}
-
+/*COULEUR*/
 .black{
     color: black;
 }
@@ -123,6 +137,8 @@ header{
 .white{
     color: white;
 }
+
+/*TYPO*/
 
 a{
     text-decoration: none;
@@ -132,5 +148,56 @@ a{
     list-style: none;
 }
 
+/*BOUTON*/
+
+.btn {
+    background-color: white;
+    color: var(--orange);
+    padding: 8px 16px;
+    border: 1px solid var(--orange);
+    display: inline-block;
+    margin-top: 50px;
+    
+}
+
+/*CARTE*/
+.card{
+    width: 28%;
+    
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-image{
+    position: relative;
+    height: 250px;
+}
+.card-description{
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: #00000089;
+    height: 100%;
+    padding: 8px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+.card:hover .card-description{
+    opacity: 1;
+}
+
+/*IMAGE*/
+
+.img{
+    width: 100%;
+    height: auto;
+}
 
 
