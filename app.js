@@ -8,6 +8,7 @@ fetch('data.json')
 
     });
 
+/** HERO */
 
 //role : afficher les cartes produ
 //parametre : le tableau des produits
@@ -35,6 +36,8 @@ function afficher(donee) {
 
 }
 
+/** TABLEAUX */
+
 fetch('data.json')
     .then(response => response.json())
     .then(data => {
@@ -46,7 +49,7 @@ fetch('data.json')
     });
 
 
-
+/** PRODUITS */
 
 //role : afficher les cartes produits 
 //parametre : le tableau des produits
@@ -57,7 +60,7 @@ function afficherProduits(tableauProduits) {
     //une boucle pour récupére les objets du tableau 1 par 1
     tableauProduits.forEach(produit => {
         document.getElementById("cardProduit").innerHTML += ` 
-                    <div class="card">
+                    <div class="card" data-aos="fade-up">
                         <div class="card-image">
                             <img src="${produit.imageurl}" alt="" class="img">
                             <div class="card-description">
@@ -78,6 +81,7 @@ function afficherProduits(tableauProduits) {
 
 }
 
+/** SERVICES */
 
 //role : afficher les cartes services 
 //parametre : le tableau des services
@@ -107,6 +111,8 @@ function afficherServices(tableauServices) {
 
 }
 
+/** TEMOINAGES */
+
 //role : afficher les cartes temoignages
 //parametre : le tableau des temoignages
 //return : rien 
@@ -118,7 +124,9 @@ function afficherTemoignages(tableauTemoin) {
     tableauTemoin.forEach(temoignage => {
         let etoile = "★".repeat(temoignage.note) + "☆".repeat(5 - temoignage.note)
         document.getElementById("cardTemoignage").innerHTML += `
-                <div class="w30 card2 avis">
+                <div class="w30 card2 avis" data-aos="flip-left"
+                 data-aos-easing="ease-out-cubic"
+                 data-aos-duration="2000">
                     <div>
                        <div class="flex spaceBetween alignCenter">
                        <p>${temoignage.prenom}</p>
@@ -133,6 +141,8 @@ function afficherTemoignages(tableauTemoin) {
     })
 
 }
+
+/** AVANTAGES */
 
 //role : afficher les avantages clients
 //parametre : le tableau des avantages clients

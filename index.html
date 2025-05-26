@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toubon Pâtisserie</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -54,7 +55,7 @@
 
     <!-- PRODUIT DU MOMENT -->
 
-    <section class="container flex g50 alignCenter">
+    <section class="container flex g50 alignCenter" >
         <div class=" imgbtn">
             <img src="asset/saint-honoré.jpg" alt="" class="img">
             <a href="" class="btn">DECOUVRIR</a>
@@ -97,19 +98,19 @@
         <section class="container top50">
             <h2 class="textCenter">Nos services</h2>
             <div class="flex spaceBetween alignCenter textCenter top20" id="cardService">
-                <!--<div class="service card">
+                <!--<div class=" card" data-aos="fade-up">
 
                     
                     <div class="card-image">
-                     <img src="${service.image}" alt="" class="img">
+                     <img src="" alt="" class="img">
                       <div class="card-description">
-                        <p>${service.description}</p>
+                        <p></p>
                       </div>
                       <a href="" class="btnService">DECOUVRIR</a>
 
                     </div>
                 </div>   
-                
+
                 <div class="service card ">
                     <div>
                         <p>Lorem iptsum</p>
@@ -136,10 +137,12 @@
 
         <!-- AVIS -->
 
-        <section>
-            <h2 class="textCenter">Avis Clients</h2>
+        <section class="top50">
+            <h2 class="textCenter ">Avis Clients</h2>
             <div class="flex g30 container" id="cardTemoignage">
-                <!--   <div class="w30 card avis">
+          <!--  <div class="w30 card avis" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                     <div>
                         <div class="flex spaceBetween alignCenter"><p>Prénom</p>
                         <p>Types d'expériences</p></div>
@@ -174,7 +177,7 @@
 
         <section>
             <div class="bgtaupe p30 flex spaceBetween" id="avantage">
-                <!--<div class="w30 textCenter" >
+                <!--<div class="w30 textCenter">
                     <div>
                         <img src="asset/fouet.png" alt="" class="w20">
                         <p>Large sélection de pâtisseries artisanales</p>
@@ -219,72 +222,49 @@
                 </a>
             </div>
 
-            <div>
-                <nav>
-                    <ul class="alignCenter none flex spaceBetween">
-                        <div>
+            <div class="flex g50">
+                <div>
+                    <nav>
+                        <ul class="none">
                             <li>
                                 <a href="" class="brown">Accueil</a>
                             </li>
-                            <li>
+                            <li class="top20">
                                 <a href="" class="brown">Nos produits</a>
                             </li>
-                        </div>
+                        </ul>
+                    </nav>
 
-                        <div>
+                </div>
+
+                <div>
+                    <nav>
+                        <ul class="none">
                             <li>
                                 <a href="" class="brown">Avis Clients</a>
                             </li>
-                            <li>
+                            <li class="top20">
                                 <a href="" class="brown">Contact</a>
                             </li>
-                        </div>
+                        </ul>
+                    </nav>
 
-                    </ul>
+                </div>
 
-                </nav>
             </div>
+
+
+
 
         </section>
 
     </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="app.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>
