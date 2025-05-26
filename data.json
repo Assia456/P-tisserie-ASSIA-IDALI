@@ -3,9 +3,18 @@
   "phraseAccroche": "Succombez à la délicatesse sucrée avec TouBon, votre pâtisserie gourmande à Auxerre",
   "texteAppelAction": "Découvrez nos créations",
   "avantagesClients": [
-    "Large sélection de pâtisseries artisanales",
-    "Ingrédients de qualité pour des saveurs authentiques",
-    "Ambiance chaleureuse pour une expérience gourmande unique"
+    {
+      "avantage": "Large sélection de pâtisseries artisanales",
+      "image": "https://www.flaticon.com/fr/icone-gratuite/fouet_5306863"
+    },
+    {
+      "avantage": "Ingrédients de qualité pour des saveurs authentiques",
+      "image": "https://www.flaticon.com/fr/icone-gratuite/poche-a-patisserie_1182244"
+    },
+    {
+      "avantage": "Ambiance chaleureuse pour une expérience gourmande unique",
+      "image": "https://www.flaticon.com/fr/icone-gratuite/patisserie_4685893"
+    }
   ],
   "produits": [
     {

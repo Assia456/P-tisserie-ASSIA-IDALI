@@ -73,6 +73,10 @@ header>nav{
     width: 20%;
 }
 
+.w30{
+    width: 30%;
+}
+
 .w35{
     width: 35%;
 }
@@ -227,6 +231,36 @@ a{
   transform: translate(-50%, -50%);
 
  
+}
+
+/*SERVICE*/
+
+
+.service{
+    position: relative;
+    display: inline-block;
+
+}
+.service .img{
+    display: block;
+}
+
+.service .btn{
+    position: absolute;
+     top: 30%;
+  left: 30%;
+  transform: translate(-30%, -30%);
+}
+
+/*AVANTAGE CLIENTS*/
+
+.bgtaupe{
+    background-color: #c6af9fb8;
+    
+}
+
+.p30{
+    padding: 30px;
 }
 
 /*Generation des classes pour la largeur des colonnes selon 
