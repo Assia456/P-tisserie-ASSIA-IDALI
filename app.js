@@ -94,10 +94,12 @@ function afficherServices(tableauServices) {
                     <div class="card-description">
                         <p>${service.description}</p>
                     </div>
+                    <a href="" class="btnService">DECOUVRIR</a>
+
             </div>
                     
                         
-            <a href="" class="btn">DECOUVRIR</a>
+            
         </div>
                 `
 
@@ -116,14 +118,16 @@ function afficherTemoignages(tableauTemoin) {
     tableauTemoin.forEach(temoignage => {
         let etoile = "★".repeat(temoignage.note) + "☆".repeat(5 - temoignage.note)
         document.getElementById("cardTemoignage").innerHTML += `
-                <div class="w30 card2">
+                <div class="w30 card2 avis">
                     <div>
-                       <div class="flex spaceBetween">
+                       <div class="flex spaceBetween alignCenter">
                        <p>${temoignage.prenom}</p>
                         <p>${temoignage.typeExperience}</p>
                         </div>
+                        <div class="top20">
                         <p>${temoignage.commentaire}</p>
-                        <p>${etoile}</p>
+                        <p class="textCenter top20">${etoile}</p>
+                        </div>
                     </div>
                 </div>`
     })
