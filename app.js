@@ -3,7 +3,7 @@ fetch('data.json')
     .then(data => {
         let produit = ""
         afficherProduits(data.produits)
-        afficherSevices(data.services)
+        afficherServices(data.services)
         afficherTemoignages(data.temoignages)
     });
 
@@ -17,9 +17,8 @@ function afficherProduits(tableauProduits) {
     //une boucle pour récupére les objets du tableau 1 par 1
     tableauProduits.forEach(produit => {
         document.getElementById("cardProduit").innerHTML += ` 
-        <div class="card" id="cardProduit">
-                    <div class="card-image">
-                        <div><img src="${produit.imageurl}" alt="" class="img"></div>
+                    <div class="card">
+                        <div class="card-image"><img src="${produit.imageurl}" alt="" class="img"></div>
 
                         <div class="card-description">
                             <p>${produit.description}</p>
@@ -40,16 +39,46 @@ function afficherProduits(tableauProduits) {
 //parametre : le tableau des services
 //return : rien 
 
-function afficherProduits(tableauProduits) {
+function afficherServices(tableauProduits) {
 
     //une boucle pour récupére les objets du tableau 1 par 1
     tableauProduits.forEach(service => {
-        document.getElementById("cardService").innerHTML += ``
+        document.getElementById("cardService").innerHTML += `
+         <div class="service card">
+
+                    <div><a href=""><img src="" alt="" class="img"></a></div>
+                    <div>
+                        <div>
+                            <p>${service.description}</p>
+                        </div>
+                        <a href="" class="btn">DECOUVRIR</a>
+                    </div>
+
+                </div>`
     })
 
+}
+
+//role : afficher les cartes temoignages
+//parametre : le tableau des temoignages
+//return : rien 
 
 
+function afficherTemoignages(tableauProduits) {
 
-
+    //une boucle pour récupére les objets du tableau 1 par 1
+    tableauProduits.forEach(temoignage => {
+        document.getElementById("cardTemoignage").innerHTML += `
+                <div class="w30 card">
+                    <div>
+                       <div class="flex spaceBetween">
+                       <p>${temoignage.prenom}</p>
+                        <p>${temoignage.typeExperience}</p>
+                        </div>
+                        <p>${temoignage.commentaire}</p>
+                        <p>${temoignage.note}</p>
+                    </div>
+                </div>`
+    })
 
 }

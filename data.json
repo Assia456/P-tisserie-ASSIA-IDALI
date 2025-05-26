@@ -41,20 +41,29 @@
       "nom": "Chausson aux Pommes",
       "description": "Retrouvez le plaisir réconfortant de notre chausson aux pommes. Une pâte feuilletée croustillante et une garniture généreuse aux pommes fondantes.",
       "imageurl": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/patisserie/chausson-pommes.webp"
+    },
+     {
+      "nom": "Saint-Honoré",
+      "description": "",
+      "imageurl":" https://sdmntprnortheu.oaiusercontent.com/files/00000000-ea54-61f4-93f5-03e2dd58806a/raw?se=2025-05-26T14%3A19%3A21Z&sp=r&sv=2024-08-04&sr=b&scid=01c5ed91-22fa-5d6c-8a60-4883689e61e8&skoid=eb780365-537d-4279-a878-cae64e33aa9c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-25T23%3A14%3A21Z&ske=2025-05-26T23%3A14%3A21Z&sks=b&skv=2024-08-04&sig=SIJkP7EglNZLTwGfLbip7qE5WkngsnhD0E0agUD/1ic%3D"
     }
   ],
   "services": [
     {
       "nom": "Gâteaux Sur Mesure",
-      "description": "Commandez des gâteaux sur mesure pour célébrer vos occasions spéciales. Des créations uniques et personnalisées pour rendre vos moments encore plus mémorables."
+      "description": "Commandez des gâteaux sur mesure pour célébrer vos occasions spéciales. Des créations uniques et personnalisées pour rendre vos moments encore plus mémorables.",
+      "image":""
     },
     {
       "nom": "Cours de Pâtisserie",
-      "description": "Participez à nos cours de pâtisserie pour apprendre les secrets de nos chefs. Éveillez le pâtissier qui sommeille en vous et régalez-vous de vos propres créations."
+      "description": "Participez à nos cours de pâtisserie pour apprendre les secrets de nos chefs. Éveillez le pâtissier qui sommeille en vous et régalez-vous de vos propres créations.",
+      "image":""
+
     },
     {
       "nom": "Service Traiteur",
-      "description": "Optez pour notre service traiteur pour ravir vos invités lors de vos événements. Des pâtisseries délicieuses et élégantes pour toutes les occasions."
+      "description": "Optez pour notre service traiteur pour ravir vos invités lors de vos événements. Des pâtisseries délicieuses et élégantes pour toutes les occasions.",
+      "image":""
     }
   ],
   "temoignages": [
