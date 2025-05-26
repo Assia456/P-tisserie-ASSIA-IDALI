@@ -4,16 +4,16 @@
   "texteAppelAction": "Découvrez nos créations",
   "avantagesClients": [
     {
-      "avantage": "Large sélection de pâtisseries artisanales",
-      "image": "https://www.flaticon.com/fr/icone-gratuite/fouet_5306863"
+      "nom": "Large sélection de pâtisseries artisanales",
+      "image": "https://cdn-icons-png.flaticon.com/128/7752/7752293.png"
     },
     {
-      "avantage": "Ingrédients de qualité pour des saveurs authentiques",
-      "image": "https://www.flaticon.com/fr/icone-gratuite/poche-a-patisserie_1182244"
+      "nom": "Ingrédients de qualité pour des saveurs authentiques",
+      "image": "https://cdn-icons-png.flaticon.com/128/5306/5306863.png"
     },
     {
-      "avantage": "Ambiance chaleureuse pour une expérience gourmande unique",
-      "image": "https://www.flaticon.com/fr/icone-gratuite/patisserie_4685893"
+      "nom": "Ambiance chaleureuse pour une expérience gourmande unique",
+      "image": "https://cdn-icons-png.flaticon.com/128/9102/9102801.png"
     }
   ],
   "produits": [
@@ -44,26 +44,26 @@
     },
      {
       "nom": "Saint-Honoré",
-      "description": "",
-      "imageurl":" https://sdmntprnortheu.oaiusercontent.com/files/00000000-ea54-61f4-93f5-03e2dd58806a/raw?se=2025-05-26T14%3A19%3A21Z&sp=r&sv=2024-08-04&sr=b&scid=01c5ed91-22fa-5d6c-8a60-4883689e61e8&skoid=eb780365-537d-4279-a878-cae64e33aa9c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-25T23%3A14%3A21Z&ske=2025-05-26T23%3A14%3A21Z&sks=b&skv=2024-08-04&sig=SIJkP7EglNZLTwGfLbip7qE5WkngsnhD0E0agUD/1ic%3D"
+      "description": "Un petit bonheur pâtissier tout en légèreté : choux dorés au caramel, crème onctueuse à la vanille et pâte croustillante se donnent rendez-vous dans ce classique revisité avec élégance. Un vrai moment de gourmandise et de fête !",
+      "imageurl":" https://sdmntprnortheu.oaiusercontent.com/files/00000000-ea54-61f4-93f5-03e2dd58806a/raw?se=2025-05-26T14%3A35%3A37Z&sp=r&sv=2024-08-04&sr=b&scid=3eac02d3-eca9-5452-af2d-f1c7789eb55c&skoid=eb780365-537d-4279-a878-cae64e33aa9c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-26T04%3A49%3A11Z&ske=2025-05-27T04%3A49%3A11Z&sks=b&skv=2024-08-04&sig=hUtALbwVXM77RG/KZcLB4bRE6e%2BBiSWa6BG9FoO9VD0%3D"
     }
   ],
   "services": [
     {
       "nom": "Gâteaux Sur Mesure",
       "description": "Commandez des gâteaux sur mesure pour célébrer vos occasions spéciales. Des créations uniques et personnalisées pour rendre vos moments encore plus mémorables.",
-      "image":""
+      "image":"https://philippeconticini.fr/cdn/shop/files/Paris_brest_-7_720x.jpg?v=1672153491"
     },
     {
       "nom": "Cours de Pâtisserie",
       "description": "Participez à nos cours de pâtisserie pour apprendre les secrets de nos chefs. Éveillez le pâtissier qui sommeille en vous et régalez-vous de vos propres créations.",
-      "image":""
+      "image":"https://www.chocolats-gelencser.com/img/cms/cours.jpg"
 
     },
     {
       "nom": "Service Traiteur",
       "description": "Optez pour notre service traiteur pour ravir vos invités lors de vos événements. Des pâtisseries délicieuses et élégantes pour toutes les occasions.",
-      "image":""
+      "image":"https://www.boulangerie-gagliano.fr/sites/2441d718/files/boulangerie_patisserie_-_saint-etienne_3.jpg"
     }
   ],
   "temoignages": [

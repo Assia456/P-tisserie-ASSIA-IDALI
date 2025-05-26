@@ -1,11 +1,51 @@
+
 fetch('data.json')
     .then(response => response.json())
     .then(data => {
-        let produit = ""
+
+        //ici j'ai acces a mon tableau de données
+        afficher(data)
+
+    });
+
+
+//role : afficher les cartes produ
+//parametre : le tableau des produits
+//return : rien 
+
+function afficher(donee) {
+
+    //une boucle pour récupére les objets du tableau 1 par 1
+
+    let titre = donee.nomCommercial
+    let phrase = donee.phraseAccroche
+    let bouton = donee.texteAppelAction
+
+    document.getElementById("donnee").innerHTML += `
+        <div class="w50 divHero bgWhite">
+
+            <h1 class="white ">${titre}</h1>
+            <p class="white top20">${phrase}</p>
+            <a href="" class="btn ">${bouton}</a>
+
+        </div>
+ `
+
+
+
+}
+
+fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+
         afficherProduits(data.produits)
         afficherServices(data.services)
         afficherTemoignages(data.temoignages)
+        afficherAvantage(data.avantagesClients)
     });
+
+
 
 
 //role : afficher les cartes produits 
@@ -18,11 +58,15 @@ function afficherProduits(tableauProduits) {
     tableauProduits.forEach(produit => {
         document.getElementById("cardProduit").innerHTML += ` 
                     <div class="card">
-                        <div class="card-image"><img src="${produit.imageurl}" alt="" class="img"></div>
-
-                        <div class="card-description">
-                            <p>${produit.description}</p>
+                        <div class="card-image">
+                            <img src="${produit.imageurl}" alt="" class="img">
+                            <div class="card-description">
+                                <p>${produit.description}</p>
+                            </div>
+                        
                         </div>
+
+                       
                         <h3 class="textCenter">${produit.nom}</h3>
 
                     </div>
@@ -39,22 +83,24 @@ function afficherProduits(tableauProduits) {
 //parametre : le tableau des services
 //return : rien 
 
-function afficherServices(tableauProduits) {
+function afficherServices(tableauServices) {
 
     //une boucle pour récupére les objets du tableau 1 par 1
-    tableauProduits.forEach(service => {
+    tableauServices.forEach(service => {
         document.getElementById("cardService").innerHTML += `
-         <div class="service card">
-
-                    <div><a href=""><img src="" alt="" class="img"></a></div>
-                    <div>
-                        <div>
-                            <p>${service.description}</p>
-                        </div>
-                        <a href="" class="btn">DECOUVRIR</a>
+        <div class="service card">
+            <div class="card-image">
+                <img src="${service.image}" alt="" class="img">
+                    <div class="card-description">
+                        <p>${service.description}</p>
                     </div>
+            </div>
+                    
+                        
+            <a href="" class="btn">DECOUVRIR</a>
+        </div>
+                `
 
-                </div>`
     })
 
 }
@@ -64,19 +110,41 @@ function afficherServices(tableauProduits) {
 //return : rien 
 
 
-function afficherTemoignages(tableauProduits) {
+function afficherTemoignages(tableauTemoin) {
 
     //une boucle pour récupére les objets du tableau 1 par 1
-    tableauProduits.forEach(temoignage => {
+    tableauTemoin.forEach(temoignage => {
+        let etoile = "★".repeat(temoignage.note) + "☆".repeat(5 - temoignage.note)
         document.getElementById("cardTemoignage").innerHTML += `
-                <div class="w30 card">
+                <div class="w30 card2">
                     <div>
                        <div class="flex spaceBetween">
                        <p>${temoignage.prenom}</p>
                         <p>${temoignage.typeExperience}</p>
                         </div>
                         <p>${temoignage.commentaire}</p>
-                        <p>${temoignage.note}</p>
+                        <p>${etoile}</p>
+                    </div>
+                </div>`
+    })
+
+}
+
+//role : afficher les avantages clients
+//parametre : le tableau des avantages clients
+//return : rien 
+
+
+function afficherAvantage(tableauAvantage) {
+
+    //une boucle pour récupére les objets du tableau 1 par 1
+    tableauAvantage.forEach(avantage => {
+        document.getElementById("avantage").innerHTML += `
+
+                <div class="w30 textCenter">
+                    <div>
+                        <img src="${avantage.image}" alt="" class="w20">
+                        <p>${avantage.nom}</p>
                     </div>
                 </div>`
     })
