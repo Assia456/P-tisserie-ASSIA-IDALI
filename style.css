@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 * {
     margin: 0;
@@ -9,13 +7,9 @@
 }
 
 body {
-    color: #2c2520;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    font-size: 17px;
-
+    color: #5f564f;
 }
+
 
 
 /*HEADER*/
@@ -125,8 +119,8 @@ header>nav {
     margin-top: 30px;
 }
 
-.top50 {
-    margin-top: 50px;
+.top110 {
+    margin-top: 110px;
 }
 
 /*FLEX*/
@@ -282,8 +276,8 @@ a {
     display: block;
 }
 
-.btnService{
-    background-color:#f1e9e4c5;
+.btnService {
+    background-color: #f1e9e4c5;
     padding: 15px;
     color: #2c2520;
 }
@@ -331,7 +325,7 @@ a {
     width: 100%;
     z-index: 3;
     font-size: 30px;
-    
+
 
 }
 

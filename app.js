@@ -23,13 +23,13 @@ function afficher(donee) {
     let bouton = donee.texteAppelAction
 
     document.getElementById("donnee").innerHTML += `
-        <div class="w50 divHero bgWhite">
+        
 
             <h1 class="white ">${titre}</h1>
             <p class="white top20">${phrase}</p>
             <a href="" class="btn ">${bouton}</a>
 
-        </div>
+        
  `
 
 
@@ -60,7 +60,7 @@ function afficherProduits(tableauProduits) {
     //une boucle pour récupére les objets du tableau 1 par 1
     tableauProduits.forEach(produit => {
         document.getElementById("cardProduit").innerHTML += ` 
-                    <div class="card" data-aos="fade-up">
+                    <div class="card top30" data-aos="fade-up">
                         <div class="card-image">
                             <img src="${produit.imageurl}" alt="" class="img">
                             <div class="card-description">
@@ -70,7 +70,7 @@ function afficherProduits(tableauProduits) {
                         </div>
 
                        
-                        <h3 class="textCenter">${produit.nom}</h3>
+                        <h3 class="textCenter p30">${produit.nom}</h3>
 
                     </div>
 
